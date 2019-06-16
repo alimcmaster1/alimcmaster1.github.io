@@ -4,8 +4,8 @@ title: Projects
 description: Current interests/thoughts
 ---
 
-## Welcome to another page
+## Reading list
 
-_yay_
+_insert some books here_
 
 [back](./)
