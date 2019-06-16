@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Link to another page](./another-page.html).
+[Reading List](./another-page.html).
 
 **Alistair McMaster** - [Github](https://pandas.pydata.org/pandas-docs/stable/user_guide/index.html)
 
