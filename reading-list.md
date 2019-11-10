@@ -29,9 +29,9 @@ _This list reflects what is currently on my schedule_
 
 ## Quantum Software
 
-1. Open source software in quantum computing - Mark Fingerhuth
+1. Open source software in quantum computing - Mark Fingerhuth -[]
 
 ## Time Series
-1. [Prophet](https://facebook.github.io/prophet/docs/quick_start.html)
+1. [Prophet](https://facebook.github.io/prophet/docs/quick_start.html) - []
 
 [back](./)
