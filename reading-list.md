@@ -13,7 +13,10 @@ _This list reflects what is currently on my schedule_
 2. [Open AI Gym](https://gym.openai.com/) - []
 3. [Deep Learning Book](http://www.deeplearningbook.org/) - []
 
+
 ## Data Science
+1. Medium
+    - [Quant/Engineer](https://medium.com/engineer-quant) - []
 
 ## Linear Algebra
 1. [Fast AI - Linear Algebra Couse](https://github.com/fastai/numerical-linear-algebra) - []
@@ -25,11 +28,12 @@ _This list reflects what is currently on my schedule_
 ## Python Development
 
 ## Computer Science
-1. [Top 10 Algorithms](http://www.cs.fsu.edu/~lacher/courses/COT4401/notes/cise_v2_i1/index.html)
+1. [Top 10 Algorithms](http://www.cs.fsu.edu/~lacher/courses/COT4401/notes/cise_v2_i1/index.html) - []
 
 ## Quantum Software
 
 1. Open source software in quantum computing - Mark Fingerhuth -[]
+2. [Qiskit](https://qiskit.org) - []
 
 ## Time Series
 1. [Prophet](https://facebook.github.io/prophet/docs/quick_start.html) - []

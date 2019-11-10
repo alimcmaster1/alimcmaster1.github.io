@@ -13,11 +13,17 @@ In my spare time time I enjoy running (half-marathons and [parkrun](https://www.
 
 # Useful Development Resources
 
-### Pandas
+### Pandas/Dataframes
 
 1. [Pandas user guide](https://pandas.pydata.org/pandas-docs/stable/user_guide/index.html)
 2. [Modern Pandas](https://tomaugspurger.github.io/modern-8-scaling.html)
+3. [Interactive Grid](https://github.com/quantopian/qgrid)
+
+## ML/Data Science
+
+1. [Feature Tools](https://docs.featuretools.com)
 
 ### AI
 
 1. [Open AI Gym](https://gym.openai.com/)
+
