@@ -10,6 +10,7 @@ I studied [Astrophysics](https://www.ast.cam.ac.uk/students) at University of Ca
 
 In my spare time time I enjoy running (half-marathons and [parkrun](https://www.parkrun.org.uk/)), cycling and rock climbing.
 
+I am a significant contributor to the open source data science python stack - mainly pandas
 
 # Useful Development Resources
 
@@ -27,3 +28,5 @@ In my spare time time I enjoy running (half-marathons and [parkrun](https://www.
 
 1. [Open AI Gym](https://gym.openai.com/)
 
+## Useful Meetup Presentations
+1. [London Pytorch Meetup](London Pytorch Meetup)
