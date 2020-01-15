@@ -34,6 +34,7 @@ _This list reflects what is currently on my schedule_
 
 1. Open source software in quantum computing - Mark Fingerhuth -[]
 2. [Qiskit](https://qiskit.org) - []
+3. [Algorithms](https://arxiv.org/pdf/1804.03719.pdf) - []
 
 ## Time Series
 1. [Prophet](https://facebook.github.io/prophet/docs/quick_start.html) - []
