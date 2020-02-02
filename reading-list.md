@@ -7,6 +7,7 @@ description: Current Reading Schedule
 ## Reading list
 
 _This list reflects what is currently on my schedule_
+( x - marks read)
 
 ## AI/Deep Learning
 1. [fast.ai course](https://course.fast.ai/index.html) - []
@@ -38,5 +39,5 @@ _This list reflects what is currently on my schedule_
 
 ## Time Series
 1. [Prophet](https://facebook.github.io/prophet/docs/quick_start.html) - []
-
+2. [Machine Learning Mastery] https://machinelearningmastery.com/start-here/#timeseries - []
 [back](./)
