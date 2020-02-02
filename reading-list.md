@@ -39,5 +39,6 @@ _This list reflects what is currently on my schedule_
 
 ## Time Series
 1. [Prophet](https://facebook.github.io/prophet/docs/quick_start.html) - []
-2. [Machine Learning Mastery] https://machinelearningmastery.com/start-here/#timeseries - []
+2. [Machine Learning Mastery](https://machinelearningmastery.com/start-here/#timeseries) - []
+
 [back](./)
