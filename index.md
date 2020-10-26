@@ -4,11 +4,11 @@ layout: default
 
 ## About Me
 <div class="pull-left"><img height="15%" width="15%" style="float: left" hspace="15" src="./assets/images/me.jpg"></div>
-I'm Alistair - a Data Scientist and Software Engineer. Currently working as a Strategist at Goldman Sachs within the Investment Banking Division. I studied [Astrophysics](https://www.ast.cam.ac.uk/students) at University of Cambridge from 2013-2016.
+I'm Alistair, a Data Scientist and Software Engineer working in Finance. Currently im a Strategist at Goldman Sachs within the Investment Banking Division. I studied [Astrophysics](https://www.ast.cam.ac.uk/students) at the University of Cambridge from 2013-2016.
 
 In my spare time time I enjoy running (half-marathons and [parkrun](https://www.parkrun.org.uk/)), cycling and rock climbing.
 
-I am a significant contributor to the open source data science python stack, mainly [Pandas](https://github.com/pandas-dev/pandas).
+I am a contributor to the open source Python data science stack, mainly [Pandas](https://github.com/pandas-dev/pandas) and am a member of the [Core Developmenmt team](https://pandas.pydata.org/about/team.html).
 
 # Useful Development Resources
 
