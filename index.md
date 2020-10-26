@@ -8,7 +8,7 @@ I'm Alistair, a Data Scientist and Software Engineer working in Finance. Current
 
 In my spare time time I enjoy running (half-marathons and [parkrun](https://www.parkrun.org.uk/)), cycling and rock climbing.
 
-I am a contributor to the open source Python data science stack, mainly [Pandas](https://github.com/pandas-dev/pandas) and am a member of the [Core Developmenmt team](https://pandas.pydata.org/about/team.html).
+I am a contributor to the open source Python data science stack, mainly [Pandas](https://github.com/pandas-dev/pandas) and am a member of the [Core Development team](https://pandas.pydata.org/about/team.html).
 
 # Useful Development Resources
 
