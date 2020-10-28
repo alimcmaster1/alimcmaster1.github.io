@@ -1,3 +1,5 @@
-# alimcmaster1.github.io
+View my website [here](alimcmaster.com)
 
-To get setup for development see the [jekyll docs](https://jekyllrb.com/docs/installation/)
+
+## Development
+To get setup for development see the [jekyll docs](https://jekyllrb.com/docs/installation/) and [here](https://github.com/github/personal-website)
