@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Reading List
+title: Alistair McMaster
 description: Current Reading Schedule
 ---
 
