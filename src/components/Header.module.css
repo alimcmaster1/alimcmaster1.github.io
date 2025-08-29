@@ -1,0 +1,51 @@
+.headerCard {
+  max-width: 700px;
+  margin: 2rem auto 2rem auto;
+  text-align: center;
+}
+.profileImg {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.10);
+  margin-bottom: 1rem;
+}
+.projectName {
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+  font-size: 2.5rem;
+  color: #222;
+}
+.projectTagline {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 1.25rem;
+  color: #2d3748;
+}
+.navLinks {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.btn {
+  display: inline-block;
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+  color: #fff !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+  padding: 0.75rem 1.5rem;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  text-decoration: none;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #1d4ed8 0%, #3b82f6 100%);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.16);
+  transform: translateY(-2px) scale(1.03);
+  color: #fff !important;
+}
