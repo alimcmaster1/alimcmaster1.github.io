@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
+import meImg from '../assets/me.jpg';
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
           height="96"
           width="96"
           style={{ float: 'left', borderRadius: '50%', marginRight: '1.5rem', marginBottom: '1rem', boxShadow: '0 2px 8px rgba(30,41,59,0.10)' }}
-          src={require('../assets/me.jpg')}
+          src={meImg}
           alt="Alistair McMaster"
         />
         <p>I'm Alistair, a Data Scientist and Software Engineer working in Finance. Currently, I'm a Strategist at Goldman Sachs within the Investment Banking Division. I studied <a href="https://www.ast.cam.ac.uk/students">Astrophysics</a> at the University of Cambridge from 2013-2016.</p>
