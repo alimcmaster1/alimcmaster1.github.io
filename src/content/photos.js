@@ -6,7 +6,7 @@ import cycle1 from '../assets/photos/cycle-1.jpg';
 import mountain1 from '../assets/photos/mountain-1.jpg';
 import trail1 from '../assets/photos/trail-1.jpg';
 import city1 from '../assets/photos/city-1.jpg';
-import portrait from '../assets/photos/portrait.jpg';
+import portrait from '../assets/photos/portrait.png';
 
 export const photos = [
   {

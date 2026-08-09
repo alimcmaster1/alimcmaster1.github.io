@@ -3,7 +3,7 @@ import { site } from '../content/site';
 import { posts } from '../content/posts';
 import { photos } from '../content/photos';
 import hero from '../assets/photos/hero.jpg';
-import portrait from '../assets/photos/portrait.jpg';
+import portrait from '../assets/photos/portrait.png';
 import styles from './Home.module.css';
 
 export default function Home() {
@@ -44,13 +44,14 @@ export default function Home() {
           <div className={styles.aboutText}>
             <p className={styles.kicker}>About</p>
             <p>
-              I&apos;m Ali — a strategist at Goldman Sachs, a Cambridge
-              astrophysics graduate, and a member of the pandas core team.
+              I&apos;m Ali — Co-Founder &amp; CTO at Hippo Labs, building
+              proactive healthcare for NHS General Practice. Ex-Goldman Sachs
+              quant, Cambridge Natural Sciences, and a pandas core maintainer.
             </p>
             <p>
-              Away from the desk I climb, run parkrun, and ride. This site is a
-              place for writing, photographs, and a living CV — closer to a
-              personal field journal than a corporate portfolio.
+              Away from the desk I climb, run with London City Athletics Club,
+              and lead mountain expeditions. This site is a place for writing,
+              photographs, and a living CV.
             </p>
             <div className={styles.actions}>
               <Link className={styles.btnDark} to="/cv">
