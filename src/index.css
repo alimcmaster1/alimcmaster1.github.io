@@ -1,19 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+:root {
+  --ink: #121612;
+  --ink-soft: #2a312b;
+  --muted: #6a746c;
+  --paper: #eef1ef;
+  --paper-deep: #e2e7e3;
+  --fog: #f7f8f6;
+  --line: rgba(18, 22, 18, 0.12);
+  --accent: #2f5d52;
+  --accent-soft: #3f7a6c;
+  --hero-veil: linear-gradient(
+    180deg,
+    rgba(10, 14, 12, 0.55) 0%,
+    rgba(10, 14, 12, 0.35) 42%,
+    rgba(10, 14, 12, 0.72) 100%
+  );
+  --font-display: 'Syne', sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --space: clamp(1rem, 2.5vw, 2rem);
+  --max: 72rem;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  background: #f8fafc;
-  color: #374151;
-  font-size: 16px;
-  line-height: 1.5;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(47, 93, 82, 0.08), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(18, 22, 18, 0.05), transparent 50%),
+    var(--fog);
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 a {
-  color: #2563eb;
-  text-decoration: none;
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
+
 a:hover {
-  text-decoration: underline;
+  color: var(--accent);
+}
+
+button {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+::selection {
+  background: rgba(47, 93, 82, 0.22);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
