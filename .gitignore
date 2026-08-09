@@ -27,3 +27,6 @@ Thumbs.db
 
 # Local history
 .history/
+# Local screenshots
+screenshot-*.webp
+screenshot-*.png
