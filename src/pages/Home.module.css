@@ -33,10 +33,10 @@
 
 .brand {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 10vw, 6.5rem);
-  font-weight: 800;
-  letter-spacing: -0.045em;
-  line-height: 0.92;
+  font-size: clamp(2.75rem, 9vw, 5.75rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.98;
   margin-bottom: 1.5rem;
   animation: rise 0.9s var(--ease) both;
 }
@@ -89,7 +89,7 @@
   justify-content: center;
   min-height: 2.75rem;
   padding: 0.65rem 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.01em;
   text-decoration: none;
@@ -115,7 +115,7 @@
   justify-content: center;
   min-height: 2.75rem;
   padding: 0.65rem 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.95rem;
   text-decoration: none;
   background: var(--ink);
@@ -179,7 +179,7 @@
 }
 
 .sectionHead a {
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   color: var(--accent);
 }

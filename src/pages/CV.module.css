@@ -59,12 +59,13 @@
 }
 
 .section h2 {
-  font-size: 1.15rem;
-  letter-spacing: 0.08em;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-family: var(--font-body);
+  font-weight: 500;
 }
 
 .job,
@@ -127,7 +128,7 @@
   background: var(--ink);
   color: #f4f7f5;
   padding: 0.7rem 1.15rem;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
 }
 
