@@ -7,6 +7,7 @@ export const site = {
     github: 'https://github.com/alimcmaster1',
     linkedin: 'https://www.linkedin.com/in/alistair-mcmaster',
     web: 'https://alimcmaster.com',
+    substack: 'https://aliclimbing.substack.com',
   },
   heroLines: [
     'CTO, builder, and wordsmith.',

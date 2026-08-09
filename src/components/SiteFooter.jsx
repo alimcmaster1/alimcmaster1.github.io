@@ -19,6 +19,9 @@ export default function SiteFooter() {
           <a href={site.links.linkedin} target="_blank" rel="noreferrer">
             LinkedIn
           </a>
+          <a href={site.links.substack} target="_blank" rel="noreferrer">
+            Substack
+          </a>
           <Link to="/cv">CV</Link>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { site } from '../content/site';
-import { posts } from '../content/posts';
+import { posts, substack } from '../content/posts';
 import { photos } from '../content/photos';
 import hero from '../assets/photos/hero.jpg';
 import portrait from '../assets/photos/portrait.png';
@@ -69,13 +69,21 @@ export default function Home() {
         <div className={styles.sectionHead}>
           <div>
             <p className={styles.kicker}>Writing</p>
-            <h2>From the blog</h2>
+            <h2>{substack.title}</h2>
           </div>
-          <Link to="/blog">All posts</Link>
+          <a href={substack.url} target="_blank" rel="noreferrer">
+            Open Substack
+          </a>
         </div>
         <div className={styles.postList}>
           {featured.map((post) => (
-            <Link key={post.slug} to={`/blog/${post.slug}`} className={styles.postRow}>
+            <a
+              key={post.slug}
+              href={post.href}
+              className={styles.postRow}
+              target="_blank"
+              rel="noreferrer"
+            >
               <time dateTime={post.date}>
                 {new Date(post.date).toLocaleDateString('en-GB', {
                   year: 'numeric',
@@ -87,8 +95,13 @@ export default function Home() {
                 <h3>{post.title}</h3>
                 <p>{post.excerpt}</p>
               </div>
-            </Link>
+            </a>
           ))}
+        </div>
+        <div className={styles.actions} style={{ marginTop: '1.5rem' }}>
+          <Link className={styles.btnDark} to="/blog">
+            Blog &amp; subscribe
+          </Link>
         </div>
       </section>
 

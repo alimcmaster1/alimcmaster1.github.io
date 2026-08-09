@@ -19,7 +19,7 @@ npm run preview
 ## Structure
 
 - `/` — full-bleed home
-- `/blog` — writing
+- `/blog` — Substack posts + subscribe embed ([Strudel and occasional summits](https://aliclimbing.substack.com/))
 - `/photos` — gallery
 - `/cv` — curriculum vitae
 

@@ -1,47 +1,40 @@
+export const substack = {
+  title: 'Strudel and occasional summits',
+  description: 'Climbing and culinary notes from the Alps, van life, and beyond.',
+  url: 'https://aliclimbing.substack.com',
+  embedUrl: 'https://aliclimbing.substack.com/embed',
+  feedUrl: 'https://aliclimbing.substack.com/feed',
+};
+
+// Curated from the Substack archive — linked out to the full posts.
 export const posts = [
   {
-    slug: 'on-keeping-a-hard-problem-open',
-    title: 'On keeping a hard problem open',
-    date: '2025-11-12',
+    slug: 'crozets-and-communal-living',
+    title: 'Crozets and Communal Living',
+    date: '2024-10-05',
     excerpt:
-      'What climbing routes and market models share: you get further by staying with uncertainty a little longer than feels comfortable.',
-    tags: ['notes', 'climbing'],
-    body: [
-      'Most of the useful work I have done — in markets, in open source, and on rock — arrived after I stopped trying to close the problem too early.',
-      'On a route, that looks like committing to a sequence before you have full confidence in the next hold. In modelling, it looks like sitting with an awkward residual instead of papering over it with another feature.',
-      'I am not arguing for recklessness. I am arguing for patience with ambiguity. The first clean story is often the wrong one.',
-      'Lately I have been writing more while I climb and run. The point is not productivity theatre. It is to leave a trail of how the thinking actually happened — messy edges included.',
-    ],
+      'My eyes bounced open as I caught myself dozing in yet another car park — this nap stop was the glamorous Decathlon in Briançon, staging for a week of climbing in the French Écrins.',
+    href: 'https://aliclimbing.substack.com/p/crozets-and-communal-living',
+    cover:
+      'https://substackcdn.com/image/fetch/$s_!LkTK!,w_1200,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9a199e48-de74-4791-9ca5-4d6cdabe75cf_1024x683.jpeg',
   },
   {
-    slug: 'pandas-notes-from-the-core',
-    title: 'Pandas notes from the core',
-    date: '2025-06-03',
-    excerpt:
-      'A short field note on contributing to pandas: what reviewers actually care about, and why small API edges matter.',
-    tags: ['engineering', 'open-source'],
-    body: [
-      'Contributing to pandas taught me that data tools are culture as much as code. People inherit habits from the defaults you ship.',
-      'The PRs that land cleanly are rarely the flashiest. They are the ones that make an existing path slightly more honest — clearer docs, fewer surprising coercions, better errors.',
-      'If you are starting out in the Python data stack: read issues carefully, reproduce narrowly, and treat the review conversation as part of the product.',
-      'I still keep a running list of sharp corners I hit at work. Some become issues. Some become patches. All of them make me a better user.',
-    ],
+    slug: 'pizzo-badile-and-pizzoccheri',
+    title: 'Pizzo Badile and Pizzoccheri',
+    date: '2024-09-07',
+    excerpt: 'Climbing and pasta — the two staples of my summer.',
+    href: 'https://aliclimbing.substack.com/p/pizzo-badile-and-pizzoccheri',
+    cover:
+      'https://substackcdn.com/image/fetch/$s_!4YGI!,w_1200,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd4e249f2-7364-4acf-8351-0a6aa3e0a49e_3024x4032.jpeg',
   },
   {
-    slug: 'parkrun-and-pacing',
-    title: 'Parkrun, pacing, and attention',
-    date: '2024-09-21',
+    slug: 'what-i-am-doing-here',
+    title: 'What I am doing here?',
+    date: '2024-09-05',
     excerpt:
-      'Saturday mornings as a practice in attention: five kilometres, no drama, and a useful reminder that consistency beats intensity.',
-    tags: ['running', 'notes'],
-    body: [
-      'Parkrun is deliberately ordinary. That is why it works. You show up, you run, you talk to someone you would not otherwise meet.',
-      'I use it as a weekly reset for pacing — not only for training, but for work. Not every session needs to be a breakthrough.',
-      'The same lesson shows up on longer climbs and longer projects: protect the sustainable cadence. Intensity is cheap. Continuity is not.',
-    ],
+      'A summer sabbatical from Hippo Labs — and the start of a climbing-and-cooking journal.',
+    href: 'https://aliclimbing.substack.com/p/what-i-am-doing-here',
+    cover:
+      'https://substackcdn.com/image/fetch/$s_!SKT_!,w_1200,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6d9e7982-c756-436f-9ef5-be91e9f8f1d5_1280x1280.png',
   },
 ];
-
-export function getPost(slug) {
-  return posts.find((post) => post.slug === slug);
-}
