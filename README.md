@@ -2,6 +2,8 @@
 
 Personal site for writing, photographs, and CV.
 
+Requires Node 20+.
+
 ## Develop
 
 ```bash
