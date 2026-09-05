@@ -1,46 +1,126 @@
-import React from 'react';
-import Card from '../components/Card';
-import meImg from '../assets/me.jpg';
+import { Link } from 'react-router-dom';
+import { site } from '../content/site';
+import { posts, substack } from '../content/posts';
+import { photos } from '../content/photos';
+import hero from '../assets/photos/hero.jpg';
+import portrait from '../assets/photos/portrait.png';
+import styles from './Home.module.css';
 
-function Home() {
+export default function Home() {
+  const featured = posts.slice(0, 3);
+  const strip = photos.filter((p) => p.id !== 'portrait').slice(0, 4);
+
   return (
     <>
-      <Card>
-        <h2>About Me</h2>
-        <img
-          height="96"
-          width="96"
-          style={{ float: 'left', borderRadius: '50%', marginRight: '1.5rem', marginBottom: '1rem', boxShadow: '0 2px 8px rgba(30,41,59,0.10)' }}
-          src={meImg}
-          alt="Alistair McMaster"
+      <section className={styles.hero} aria-label="Introduction">
+        <div
+          className={styles.bg}
+          style={{ backgroundImage: `url(${hero})` }}
+          role="img"
+          aria-label="Mountain landscape"
         />
-        <p>I'm Alistair, a Data Scientist and Software Engineer working in Finance. Currently, I'm a Strategist at Goldman Sachs within the Investment Banking Division. I studied <a href="https://www.ast.cam.ac.uk/students">Astrophysics</a> at the University of Cambridge from 2013-2016.</p>
-        <p>In my spare time, I enjoy running (half-marathons and <a href="https://www.parkrun.org.uk/">parkrun</a>), cycling, and rock climbing.</p>
-        <p>I am a contributor to the open source Python data science stack, mainly <a href="https://github.com/pandas-dev/pandas">Pandas</a> and am a member of the <a href="https://pandas.pydata.org/about/team.html">Core Development team</a>.</p>
-      </Card>
-      <Card>
-        <h2>Useful Development Resources</h2>
-        <h3>Pandas/Dataframes</h3>
-        <ul>
-          <li><a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/index.html">Pandas user guide</a></li>
-          <li><a href="https://tomaugspurger.github.io/modern-8-scaling.html">Modern Pandas</a></li>
-          <li><a href="https://github.com/quantopian/qgrid">Interactive Grid</a></li>
-        </ul>
-        <h3>ML/Data Science</h3>
-        <ul>
-          <li><a href="https://docs.featuretools.com">Feature Tools</a></li>
-        </ul>
-        <h3>AI</h3>
-        <ul>
-          <li><a href="https://gym.openai.com/">Open AI Gym</a></li>
-        </ul>
-        <h3>Useful Meetup Presentations</h3>
-        <ul>
-          <li><a href="#">London Pytorch Meetup</a></li>
-        </ul>
-      </Card>
+        <div className={styles.veil} />
+        <div className={styles.content}>
+          <h1 className={styles.brand}>{site.name}</h1>
+          <ul className={styles.lines}>
+            {site.heroLines.map((line) => (
+              <li key={line}>{line}</li>
+            ))}
+          </ul>
+          <div className={styles.actions}>
+            <Link className={styles.btn} to="/photos">
+              View photographs
+            </Link>
+            <Link className={styles.btnGhost} to="/blog">
+              Read the blog
+            </Link>
+          </div>
+        </div>
+        <div className={styles.scroll}>Scroll</div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.about}>
+          <div className={styles.aboutText}>
+            <p className={styles.kicker}>About</p>
+            <p>
+              I&apos;m Ali — Co-Founder &amp; CTO at Hippo Labs, building
+              proactive healthcare for NHS General Practice. Ex-Goldman Sachs
+              quant, Cambridge Natural Sciences, and a pandas core maintainer.
+            </p>
+            <p>
+              Away from the desk I climb, run with London City Athletics Club,
+              and lead mountain expeditions. This site is a place for writing,
+              photographs, and a living CV.
+            </p>
+            <div className={styles.actions}>
+              <Link className={styles.btnDark} to="/cv">
+                View CV
+              </Link>
+            </div>
+          </div>
+          <div className={styles.portraitWrap}>
+            <img src={portrait} alt="Alistair McMaster" />
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.sectionHead}>
+          <div>
+            <p className={styles.kicker}>Writing</p>
+            <h2>{substack.title}</h2>
+          </div>
+          <a href={substack.url} target="_blank" rel="noreferrer">
+            Open Substack
+          </a>
+        </div>
+        <div className={styles.postList}>
+          {featured.map((post) => (
+            <a
+              key={post.slug}
+              href={post.href}
+              className={styles.postRow}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <time dateTime={post.date}>
+                {new Date(post.date).toLocaleDateString('en-GB', {
+                  year: 'numeric',
+                  month: 'short',
+                  day: 'numeric',
+                })}
+              </time>
+              <div>
+                <h3>{post.title}</h3>
+                <p>{post.excerpt}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+        <div className={styles.actions} style={{ marginTop: '1.5rem' }}>
+          <Link className={styles.btnDark} to="/blog">
+            Blog &amp; subscribe
+          </Link>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.sectionHead}>
+          <div>
+            <p className={styles.kicker}>Photographs</p>
+            <h2>Selected frames</h2>
+          </div>
+          <Link to="/photos">Open gallery</Link>
+        </div>
+        <div className={styles.photoStrip}>
+          {strip.map((photo) => (
+            <Link key={photo.id} to="/photos" aria-label={photo.title}>
+              <img src={photo.src} alt={photo.title} loading="lazy" />
+            </Link>
+          ))}
+        </div>
+      </section>
     </>
   );
 }
-
-export default Home;

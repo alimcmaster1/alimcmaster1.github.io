@@ -1,24 +1,26 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import SiteHeader from './components/SiteHeader';
+import SiteFooter from './components/SiteFooter';
 import Home from './pages/Home';
-import ReadingList from './pages/ReadingList';
+import Blog from './pages/Blog';
+import Photos from './pages/Photos';
+import CV from './pages/CV';
 import styles from './App.module.css';
 
-function App() {
+export default function App() {
   return (
-    <div className={styles.appRoot}>
-      <Header />
-      <main className={styles.mainContent}>
+    <div className={styles.shell}>
+      <SiteHeader />
+      <main className={styles.main}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/reading-list" element={<ReadingList />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<Navigate to="/blog" replace />} />
+          <Route path="/photos" element={<Photos />} />
+          <Route path="/cv" element={<CV />} />
         </Routes>
       </main>
-      <Footer />
+      <SiteFooter />
     </div>
   );
 }
-
-export default App;

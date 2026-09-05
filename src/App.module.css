@@ -1,16 +1,9 @@
-.appRoot {
+.shell {
   min-height: 100vh;
-  background: #f8fafc;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.mainContent {
-  width: 100%;
-  max-width: 700px;
-  margin: 2rem auto;
+.main {
   flex: 1;
-  display: flex;
-  flex-direction: column;
 }

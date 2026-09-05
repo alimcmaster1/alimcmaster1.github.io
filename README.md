@@ -1,40 +1,26 @@
-# React Portfolio (Vite)
+# Alistair McMaster
 
-This is a modern React-based version of your portfolio site, using Vite, React Router, and CSS Modules.
+Personal site for writing, photographs, and CV.
 
-## Getting Started
+## Develop
 
-1. **Install dependencies**
-   ```
+```bash
 npm install
-   ```
-2. **Run the development server**
-   ```
 npm run dev
-   ```
-   The site will be available at http://localhost:5173
+```
 
-3. **Build for production**
-   ```
+## Build
+
+```bash
 npm run build
-   ```
-   The static site will be output to the `dist` folder.
+npm run preview
+```
 
-## Project Structure
-- `src/` - React source code
-  - `components/` - Reusable UI components (Header, Footer, Card)
-  - `pages/` - Main pages (Home, Reading List)
-  - `assets/` - Images and static assets
-- `public/` - (optional) Static files
-- `package.json` - Project metadata and dependencies
-- `vite.config.js` - Vite configuration
+## Structure
 
-## Features
-- Modern, professional design
-- Responsive layout
-- Routing for Home and Reading List
-- Easy to extend with more pages or features
+- `/` — full-bleed home
+- `/blog` — Substack posts + subscribe embed ([Strudel and occasional summits](https://aliclimbing.substack.com/))
+- `/photos` — gallery
+- `/cv` — curriculum vitae
 
----
-
-If you do not have Node.js locally, you can use this codebase in a cloud IDE (like GitHub Codespaces, StackBlitz, or Gitpod) to run and deploy your site.
+Content lives in `src/content/`. Replace images in `src/assets/photos/`.

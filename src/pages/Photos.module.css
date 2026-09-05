@@ -1,0 +1,199 @@
+.page {
+  width: min(100%, var(--max));
+  margin: 0 auto;
+  padding: 7rem var(--space) 4.5rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  max-width: 40rem;
+}
+
+.kicker {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.65rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 3.8rem);
+  margin-bottom: 0.85rem;
+}
+
+.hero p {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2.3vw, 1.45rem);
+  line-height: 1.35;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter,
+.filterActive {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.45rem 0.85rem;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease),
+    border-color 0.2s var(--ease);
+}
+
+.filter:hover {
+  border-color: var(--ink);
+}
+
+.filterActive {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #f4f7f5;
+}
+
+.grid {
+  columns: 1;
+  column-gap: 0.75rem;
+}
+
+.card {
+  break-inside: avoid;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  border: 0;
+  background: var(--paper-deep);
+  cursor: zoom-in;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: rise 0.7s var(--ease) both;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.card:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.card:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.card:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.card:nth-child(7) {
+  animation-delay: 0.35s;
+}
+.card:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.card:nth-child(9) {
+  animation-delay: 0.45s;
+}
+
+.card img {
+  width: 100%;
+  transition: transform 0.7s var(--ease);
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.caption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 2.5rem 0.85rem 0.85rem;
+  background: linear-gradient(transparent, rgba(10, 14, 12, 0.78));
+  color: #f4f7f5;
+  opacity: 0;
+  transform: translateY(0.4rem);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.card:hover .caption,
+.card:focus-visible .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.caption strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+}
+
+.caption span {
+  font-size: 0.82rem;
+  opacity: 0.85;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(8, 10, 9, 0.92);
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  animation: fade 0.2s var(--ease);
+}
+
+.lightbox img {
+  max-height: min(82vh, 900px);
+  max-width: min(96vw, 1100px);
+  object-fit: contain;
+}
+
+.lightboxMeta {
+  position: absolute;
+  left: var(--space);
+  bottom: var(--space);
+  color: #f4f7f5;
+}
+
+.lightboxMeta strong {
+  display: block;
+  font-family: var(--font-display);
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 1px solid rgba(244, 247, 245, 0.45);
+  background: transparent;
+  color: #f4f7f5;
+  width: 2.75rem;
+  height: 2.75rem;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    columns: 3;
+  }
+}
